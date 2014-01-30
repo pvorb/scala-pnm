@@ -1,14 +1,15 @@
-package de.vorb.pnm.impl
+package de
+package vorb
+package pnm
+package impl
 
 import java.awt.image.BufferedImage
 import java.io.{ File, FileInputStream, FileOutputStream, IOException, InputStream, OutputStream }
 import java.util.Scanner
-import de.vorb.pnm.{ FileType, PNM }
 import java.io.BufferedOutputStream
 import java.io.OutputStreamWriter
-import java.io.BufferedWriter
 import java.io.Writer
-import com.sun.org.apache.xalan.internal.xsltc.compiler.ValueOf
+import de.vorb.pnm.FileType
 
 private[pnm] object PNMImpl extends PNM {
   def read(file: File): BufferedImage =

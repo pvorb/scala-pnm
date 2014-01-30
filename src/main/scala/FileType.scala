@@ -1,4 +1,6 @@
-package de.vorb.pnm
+package de
+package vorb
+package pnm
 
 sealed trait FileType
 

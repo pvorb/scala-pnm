@@ -1,11 +1,15 @@
-package de.vorb.pnm
+package de
+package vorb
+package pnm
 
 import java.io.File
 import java.awt.image.BufferedImage
 import java.io.InputStream
 import java.io.OutputStream
-import de.vorb.pnm.impl.PNMImpl
 import java.io.IOException
+import java.io.IOException
+
+import impl.PNMImpl
 
 trait PNM {
   /**
