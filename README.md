@@ -19,7 +19,7 @@ Installation
 SBT:
 
 ~~~ scala
-libraryDependencies += "de.vorb" %% "scala-npm" % "0.0.+"
+libraryDependencies += "de.vorb" %% "scala-pnm" % "0.0.+"
 ~~~
 
 
@@ -27,13 +27,13 @@ Usage
 -----
 
 ~~~ scala
-import java.awt.BufferedImage
+import java.awt.image.BufferedImage
 import java.io.File
 
 import de.vorb.pnm.{ PNM, FileType }
 
 val img: BufferedImage = PNM.read(new File("path/to/image.pnm"))
-PNM.write(new File("path/to/image2.pnm", FileType.BitmapASCII, img))
+PNM.write(new File("path/to/image2.pnm"), FileType.BitmapASCII, img)
 ~~~
 
 
